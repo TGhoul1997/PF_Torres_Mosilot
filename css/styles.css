@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ChangaOne;
+    src: url(../assets/fonts/ChangaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alatsi;
+    src: url(../assets/fonts/Alatsi-Regular.ttf);
+}
+
+h1 {
+    color: white;
+    font-family: ChangaOne, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 5.5em;
+    padding: 20px 40px 20px 20px;
+}
+
+.title__div--circle {
+    display: inline-block;
+    text-align: center;
+    width: 25vw;
+    background-color: rgb(255, 0, 0);
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+
+}
+
+h2 {
+    color: #252525;
+    font-family: Alatsi, sans-serif;
+    font-size: 3.5em;
+}
+
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: Alatsi, sans-serif;
+}
+
+main {
+    padding-top: 20px;
+}
+
+header {
+    background-color: #414141;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: ChangaOne, sans-serif;
+    font-weight: lighter;
+}
+
+header nav img {
+    height: 150px;
+    width: 200px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5em;
+}
+
+.div--title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0.75em solid #FF0000;
+    border-top: white;
+    border-radius: 1.5em;
+    margin: 40px;
+}
+
+/*CSS página index primera sección*/
+.box {
+    display: flex;
+    margin: 20px;
+    gap: 2px;
+}
+
+.box__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding-top: 15px;
+    background-color: #252525;
+    border: #252525 outset 3px;
+}
+
+.box__article h3 {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    color: white;
+}
+
+/*CSS página index primera sección*/
+/*CSS página index segunda sección*/
+.brand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1000px;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.brand__article {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.brand img {
+    height: 400px;
+    width: 100%;
+    border-radius: 1em;
+}
+
+/*CSS página index segunda sección*/
+/*CSS página index tercera sección*/
+.model__container {
+    width: 100%;
+    max-width: 1700px;
+    max-height: 1500px;
+    margin: 60px auto;
+    padding-top: 60px;
+    padding-bottom: 700px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 10% 40% 10%;
+    grid-template-rows: 10% 40% 10% 40% 10% 40%;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas:
+        "car--1 model--1 model--2 model--2"
+        "car--1 model--1 car--2 car--2"
+        "model--3 model--3 car--4 model--4"
+        "car--3 car--3 car--4 model--4"
+        "car--5 model--5 model--6 model--6"
+        "car--5 model--5 car--6 car--6"
+    ;
+}
+
+.car--1 {
+    grid-area: car--1;
+}
+
+.car--2 {
+    grid-area: car--2;
+}
+
+.car--3 {
+    grid-area: car--3;
+}
+
+.car--4 {
+    grid-area: car--4;
+}
+
+.car--5 {
+    grid-area: car--5;
+}
+
+.car--6 {
+    grid-area: car--6;
+}
+
+.model--1 {
+    grid-area: model--1;
+}
+
+.model--2 {
+    grid-area: model--2;
+}
+
+.model--3 {
+    grid-area: model--3;
+}
+
+.model--4 {
+    grid-area: model--4;
+}
+
+.model--5 {
+    grid-area: model--5;
+}
+
+.model--6 {
+    grid-area: model--6;
+}
+
+.model__container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
+
+.model__container div {
+    background-color: #414141;
+    border-radius: 2em;
+    border: outset #414141 0.5em;
+    align-content: center;
+    text-align: center;
+}
+
+.model__container h3 {
+    color: white;
+    font-size: 2.5em;
+}
+
+/*CSS página index tercera sección*/
+.footer {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 30px;
+    background-color: #414141
+}
+
+.footer__icon {
+    width: 2em;
+}
+
+/*CSS página footer*/
+/*  */
+.products--grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: 130px 2fr 2fr 2fr 2fr 75px;
+    grid-template-areas:
+        "header header header header header"
+        "title title title title title"
+        "aside productos productos productos productos"
+        "aside productos productos productos productos"
+        "aside productos productos productos productos"
+        "footer footer footer footer footer"
+    ;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.products--grid header {
+    grid-area: header;
+}
+
+.title--grid {
+    grid-area: title;
+}
+
+.products--grid section {
+    grid-area: productos;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.products--grid aside {
+    grid-area: aside;
+    background-color: darkgray;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 300px;
+    height: 1500px;
+}
+
+.products--grid aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products--grid aside ul li {
+    list-style: none;
+    margin: 20px;
+    font-family: alatsi;
+    font-size: 1.5em;
+}
+
+.products--grid footer {
+    grid-area: footer;
+}
+
+.products--grid section div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0.75em solid #FF0000;
+    border-top: white;
+    border-left: white;
+    border-radius: 1.5em;
+    margin: 40px;
+    width: 100%;
+    height: auto;
+}
+
+.products--grid div img {
+    height: 100%;
+    border-radius: 2em;
+    padding: 20px;
+}
+
+/*  */
+/*CSS página F1 Drivers primera sección*/
+
+.pilots__section--grid {
+    width: 100%;
+    max-width: 1700px;
+    max-height: 1300px;
+    margin: 60px auto;
+    padding-top: 60px;
+    padding-bottom: 700px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-template-areas:
+        "pilot--1 pilot--2 pilot--3 pilot--4 pilot--5"
+        "pilot--6 pilot--7 pilot--8 pilot--9 pilot--10"
+        "pilot--11 pilot--12 pilot--13 pilot--14 pilot--15"
+        "pilot--16 pilot--17 pilot--18 pilot--19 pilot--20"
+    ;
+}
+
+.pilot--1 {
+    grid-area: pilot--1;
+}
+
+.pilot--2 {
+    grid-area: pilot--2;
+}
+
+.pilot--3 {
+    grid-area: pilot--3;
+}
+
+.pilot--4 {
+    grid-area: pilot--4;
+}
+
+.pilot--5 {
+    grid-area: pilot--5;
+}
+
+.pilot--6 {
+    grid-area: pilot--6;
+}
+
+.pilot--7 {
+    grid-area: pilot--7;
+}
+
+.pilot--8 {
+    grid-area: pilot--8;
+}
+
+.pilot--9 {
+    grid-area: pilot--9;
+}
+
+.pilot--10 {
+    grid-area: pilot--10;
+}
+
+.pilot--11 {
+    grid-area: pilot--11;
+}
+
+.pilot--12 {
+    grid-area: pilot--12;
+}
+
+.pilot--13 {
+    grid-area: pilot--13;
+}
+
+.pilot--14 {
+    grid-area: pilot--14;
+}
+
+.pilot--15 {
+    grid-area: pilot--15;
+}
+
+.pilot--16 {
+    grid-area: pilot--16;
+}
+
+.pilot--17 {
+    grid-area: pilot--17;
+}
+
+.pilot--18 {
+    grid-area: pilot--18;
+}
+
+.pilot--19 {
+    grid-area: pilot--19;
+}
+
+.pilot--20 {
+    grid-area: pilot--20;
+}
+
+.pilots__section--grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #FF0000 0.75em;
+    border-top: white;
+    border-left: white;
+    border-radius: 2.5em;
+}
+
+/*CSS página F1 Drivers primera sección*/
+/*CSS página Contacto rectangulo*/
+.img_consecionario img {
+    width: 100vw;
+    height: 50vh;
+}
+
+/*CSS página Contacto rectangulo*/
+/*CSS página Contacto central*/
+.img_consecionario div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.div_central img {
+    width: 70vw;
+    height: 60vh;
+}
+
+/*CSS página Contacto central*/
+/* 768px hasta 1023*/
+@media (max-width: 768px) {
+    header {
+        padding-bottom: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    }
+
+    .title__div--circle {
+        border-radius: 2em;
+        padding: 0px;
+        font-size: 5px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 60vw;
+    }
+
+    .div--title {
+        width: 70vw;
+    }
+
+    .brand {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .model__container {
+        max-height: 2500px;
+        max-width: 400px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+        grid-template-areas:
+            "car--1"
+            "model--1"
+            "car--2"
+            "model--2"
+            "car--3"
+            "model--3"
+            "car--4"
+            "model--4"
+            "car--5"
+            "model--5"
+            "car--6"
+            "model--6"
+        ;
+    }
+
+    .pilots__section--grid {
+        max-height: 6500px;
+        max-width: 400px;
+        row-gap: 70px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+        grid-template-areas:
+        "pilot--1"
+        "pilot--2"
+        "pilot--3"
+        "pilot--4"
+        "pilot--5"
+        "pilot--6"
+        "pilot--7"
+        "pilot--8"
+        "pilot--9"
+        "pilot--10"
+        "pilot--11"
+        "pilot--12"
+        "pilot--13"
+        "pilot--14"
+        "pilot--15"
+        "pilot--16"
+        "pilot--17"
+        "pilot--18"
+        "pilot--19"
+        "pilot--20"
+        ;
+    }
+}
+
+/* 768px hasta 1023*/
