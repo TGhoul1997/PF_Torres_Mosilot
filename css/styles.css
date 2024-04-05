@@ -475,10 +475,22 @@ nav ul li a {
         width: 100%;
     }
 
+    nav ul li {
+        font-size: 0.6em;
+    }
+
     .title__div--circle {
         border-radius: 2em;
         padding: 0px;
-        font-size: 5px;
+        width: 60%;
+    }
+
+    .title__div--circle h1 {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 20px;
     }
 
     main {
@@ -490,20 +502,36 @@ nav ul li a {
     .box {
         flex-direction: column;
         width: 60vw;
+
+        gap: 20px;
+    }
+
+    .box__article {
+        height: 300px;
     }
 
     .div--title {
-        width: 70vw;
+        width:70vw;
+    }
+
+    .div--title h2 {
+        font-size: 2em;
     }
 
     .brand {
         flex-wrap: nowrap;
+        align-items: center;
         height: auto;
     }
 
+    .brand__article img{
+        width: 250px;
+        height: 200px;
+    }
+
     .model__container {
-        max-height: 2500px;
-        max-width: 400px;
+        max-height: 2000px;
+        max-width: 200px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
         grid-template-areas:
@@ -524,31 +552,31 @@ nav ul li a {
 
     .pilots__section--grid {
         max-height: 6500px;
-        max-width: 400px;
+        max-width: 100px;
         row-gap: 70px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(20, 1fr);
         grid-template-areas:
-        "pilot--1"
-        "pilot--2"
-        "pilot--3"
-        "pilot--4"
-        "pilot--5"
-        "pilot--6"
-        "pilot--7"
-        "pilot--8"
-        "pilot--9"
-        "pilot--10"
-        "pilot--11"
-        "pilot--12"
-        "pilot--13"
-        "pilot--14"
-        "pilot--15"
-        "pilot--16"
-        "pilot--17"
-        "pilot--18"
-        "pilot--19"
-        "pilot--20"
+            "pilot--1"
+            "pilot--2"
+            "pilot--3"
+            "pilot--4"
+            "pilot--5"
+            "pilot--6"
+            "pilot--7"
+            "pilot--8"
+            "pilot--9"
+            "pilot--10"
+            "pilot--11"
+            "pilot--12"
+            "pilot--13"
+            "pilot--14"
+            "pilot--15"
+            "pilot--16"
+            "pilot--17"
+            "pilot--18"
+            "pilot--19"
+            "pilot--20"
         ;
     }
 }
