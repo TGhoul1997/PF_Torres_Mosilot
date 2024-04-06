@@ -19,7 +19,8 @@ h1 {
     font-family: ChangaOne, sans-serif;
     font-style: italic;
     font-weight: lighter;
-    font-size: 5.5em;
+    font-size: 4em;
+    width: 100%;
     padding: 20px 40px 20px 20px;
 }
 
@@ -27,6 +28,7 @@ h1 {
     display: inline-block;
     text-align: center;
     width: 25vw;
+    height: 100px;
     background-color: rgb(255, 0, 0);
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -249,69 +251,21 @@ nav ul li a {
 
 /*CSS página footer*/
 /*  */
-.products--grid {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: 130px 2fr 2fr 2fr 2fr 75px;
-    grid-template-areas:
-        "header header header header header"
-        "title title title title title"
-        "aside productos productos productos productos"
-        "aside productos productos productos productos"
-        "aside productos productos productos productos"
-        "footer footer footer footer footer"
-    ;
-    column-gap: 15px;
-    row-gap: 15px;
-}
-
-.products--grid header {
-    grid-area: header;
-}
-
-.title--grid {
-    grid-area: title;
-}
-
-.products--grid section {
-    grid-area: productos;
-    max-width: 200px;
+.products--flex {
     display: flex;
-    flex-direction: row;
-
+    gap: 200px;
 }
 
-.products--grid aside {
-    grid-area: aside;
-    background-color: darkgray;
-    margin-left: 20px;
-    margin-top: 50px;
-    width: 300px;
-    height: 1500px;
+.products__section--grid img {
+    max-width: 100%;
 }
 
-.products--grid aside ul {
+.products__section--grid div {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.products--grid aside ul li {
-    list-style: none;
-    margin: 20px;
-    font-family: alatsi;
-    font-size: 1.5em;
-}
-
-.products--grid footer {
-    grid-area: footer;
-}
-
-.products--grid section div {
-    display: flex;
-    flex-direction: column;
     text-align: center;
+    max-width: 350px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: 0.75em solid #FF0000;
@@ -319,14 +273,90 @@ nav ul li a {
     border-left: white;
     border-radius: 1.5em;
     margin: 40px;
-    width: 100%;
-    height: auto;
 }
-
-.products--grid div img {
-    height: 100%;
+.products img {
     border-radius: 2em;
     padding: 20px;
+}
+
+.products__section--grid {
+    width: 65vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "product--1 product--2 product--3"
+        "product--4 product--5 product--6"
+        "product--7 product--8 product--9"
+        "product--10 product--11 product--12"
+    ;
+}
+
+.product--1 {
+    grid-area: product--1;
+}
+.product--2 {
+    grid-area: product--2;
+}
+
+.product--3 {
+    grid-area: product--3;
+}
+
+.product--4 {
+    grid-area: product--4;
+}
+
+.product--5 {
+    grid-area: product--5;
+}
+
+.product--6 {
+    grid-area: product--6;
+}
+
+.product--7 {
+    grid-area: product--7;
+}
+
+.product--8 {
+    grid-area: product--8;
+}
+
+.product--9 {
+    grid-area: product--9;
+}
+
+.product--10 {
+    grid-area: product--10;
+}
+
+.product--11 {
+    grid-area: product--11;
+}
+
+.product--12 {
+    grid-area: product--12;
+}
+
+.products aside {
+    background-color: darkgray;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 300px;
+    height: 1200px;
+}
+
+.products aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products aside ul li {
+    list-style: none;
+    margin: 20px;
+    font-family: alatsi;
+    font-size: 1.5em;
 }
 
 /*  */
