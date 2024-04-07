@@ -494,9 +494,10 @@ nav ul li a {
 
 /*CSS página Contacto central*/
 /* 768px hasta 1023*/
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     header {
         padding-bottom: 30px;
+        width: 100%;
     }
 
     nav {
@@ -506,7 +507,7 @@ nav ul li a {
     }
 
     nav ul li {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 
     .title__div--circle {
@@ -608,6 +609,10 @@ nav ul li a {
             "pilot--19"
             "pilot--20"
         ;
+    }
+    .footer {
+        padding: 10px;
+        justify-content: center;
     }
 }
 
