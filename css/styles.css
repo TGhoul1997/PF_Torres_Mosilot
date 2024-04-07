@@ -30,9 +30,8 @@ h1 {
     width: 25vw;
     height: 100px;
     background-color: rgb(255, 0, 0);
-    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
-
 }
 
 h2 {
@@ -51,6 +50,8 @@ span {
 
 main {
     padding-top: 20px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 header {
@@ -76,13 +77,13 @@ nav ul li {
 
 nav ul {
     display: flex;
+    gap: 1em;
+    padding-right: 1em;
 }
 
 nav ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1rem;
-    margin-right: 1rem;
     font-size: 1.5em;
 }
 
@@ -148,7 +149,7 @@ nav ul li a {
 /*CSS página index tercera sección*/
 .model__container {
     width: 100%;
-    max-width: 1700px;
+    max-width: 90%;
     max-height: 1500px;
     margin: 60px auto;
     padding-top: 60px;
@@ -250,7 +251,7 @@ nav ul li a {
 }
 
 /*CSS página footer*/
-/*CSS prouctos*/
+/*CSS productos*/
 .products--flex {
     display: flex;
     gap: 200px;
@@ -505,18 +506,22 @@ nav ul li a {
 
     nav {
         flex-direction: column;
-        align-content: center;
-        width: 100%;
+    }
+
+    nav ul {
+        padding: 0%;
     }
 
     nav ul li {
-        font-size: 0.5em;
+        font-size: 0.4em;
+        justify-content: space-between;
     }
 
     .title__div--circle {
         border-radius: 2em;
         padding: 0px;
         width: 60%;
+        height: 40%;
     }
 
     .title__div--circle h1 {
@@ -613,16 +618,17 @@ nav ul li a {
             "pilot--20"
         ;
     }
-
-    .products {
-        flex-direction: column;
-        align-items: center;
+    .products aside {
+        margin: 50px 0px 0px 0px;
     }
+
     .products--flex {
+        gap: 40px;
         flex-direction: column;
     }
 
     .products__section--grid {
+        gap: 40px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
         grid-template-areas:
@@ -639,16 +645,19 @@ nav ul li a {
             "product--11"
             "product--12"
         ;
-        align-items: end;
     }
 
     .products__section--grid div {
+        justify-content: center;
         width: 300px;
+        padding: 0%;
+        margin: 20px 0px 20px 0px;
     }
 
     .footer {
         padding: 10px;
         justify-content: center;
+        margin-top: 50px;
     }
 }
 
