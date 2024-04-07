@@ -250,7 +250,7 @@ nav ul li a {
 }
 
 /*CSS página footer*/
-/*  */
+/*CSS prouctos*/
 .products--flex {
     display: flex;
     gap: 200px;
@@ -274,6 +274,7 @@ nav ul li a {
     border-radius: 1.5em;
     margin: 40px;
 }
+
 .products img {
     border-radius: 2em;
     padding: 20px;
@@ -284,7 +285,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "product--1 product--2 product--3"
         "product--4 product--5 product--6"
         "product--7 product--8 product--9"
@@ -295,6 +296,7 @@ nav ul li a {
 .product--1 {
     grid-area: product--1;
 }
+
 .product--2 {
     grid-area: product--2;
 }
@@ -352,6 +354,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
 }
+
 .products aside ul li {
     list-style: none;
     margin: 20px;
@@ -359,7 +362,7 @@ nav ul li a {
     font-size: 1.5em;
 }
 
-/*  */
+/*CSS prouctos*/
 /*CSS página F1 Drivers primera sección*/
 
 .pilots__section--grid {
@@ -542,7 +545,7 @@ nav ul li a {
     }
 
     .div--title {
-        width:70vw;
+        width: 70vw;
     }
 
     .div--title h2 {
@@ -555,7 +558,7 @@ nav ul li a {
         height: auto;
     }
 
-    .brand__article img{
+    .brand__article img {
         width: 250px;
         height: 200px;
     }
@@ -610,6 +613,39 @@ nav ul li a {
             "pilot--20"
         ;
     }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .products--flex {
+        flex-direction: column;
+    }
+
+    .products__section--grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "product--1"
+            "product--2"
+            "product--3"
+            "product--4"
+            "product--5"
+            "product--6"
+            "product--7"
+            "product--8"
+            "product--9"
+            "product--10"
+            "product--11"
+            "product--12"
+        ;
+        align-items: end;
+    }
+
+    .products__section--grid div {
+        width: 300px;
+    }
+
     .footer {
         padding: 10px;
         justify-content: center;
