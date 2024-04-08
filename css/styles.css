@@ -528,7 +528,7 @@ nav ul li a {
         font-size: 2em;
         width: 100%;
         text-align: center;
-        margin: 0px;
+        margin: 0;
         padding: 20px;
     }
 
@@ -619,7 +619,7 @@ nav ul li a {
         ;
     }
     .products aside {
-        margin: 50px 0px 0px 0px;
+        margin: 50px 0 0 0;
     }
 
     .products--flex {
@@ -651,7 +651,7 @@ nav ul li a {
         justify-content: center;
         width: 300px;
         padding: 0%;
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0;
     }
 
     .footer {
