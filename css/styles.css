@@ -501,6 +501,10 @@ nav ul li:hover {
     border-radius: 2.5em;
 }
 
+.pilots__section--grid div h3 {
+    color: #000;
+}
+
 /*CSS página F1 Drivers primera sección*/
 /*CSS página Contacto rectangulo*/
 .img_consecionario img {
