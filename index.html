@@ -7,6 +7,7 @@
     <title>F1 Luxury</title>
     <link rel="shortcut icon" href="./assets/images/favicon_f1.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                     <a href="./pages/f1_drivers.html">F1 Drivers</a>
                 </li>
                 <li>
-                    <a href="./novedades.html">Novedades</a>
+                    <a href="./pages/novedades.html">Novedades</a>
                 </li>
                 <li>
                     <a href="./pages/contacto.html">Contacto</a>
@@ -33,10 +34,10 @@
         </nav>
     </header>
     <main>
-        <div class="title__div--circle">
+        <div class="title__div--circle" data-aos="fade-right">
             <h1>Home</h1>
         </div>
-        <section class="box">
+        <section class="box" data-aos="fade-right">
             <article class="box__article">
                 <a href="./pages/f1_drivers.html"><img src="./assets/images/verstappen.webp"
                         alt="imagen de piloto de red bull"></a>
@@ -148,5 +149,9 @@
             <img src="./assets/images/youtube.png" alt="ícono de youtube" class="footer__icon">
         </a>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
