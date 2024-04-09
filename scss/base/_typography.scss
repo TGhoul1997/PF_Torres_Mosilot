@@ -1,0 +1,26 @@
+h1 {
+    font-family: "ChangaOne", sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 4em;
+    color: $color-text;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Alatsi", sans-serif;
+    color: $color-text-secondary;
+}
+
+ul li a {
+    font-family: "ChangaOne", sans-serif;
+    color: $color-text;
+    font-size: 1.5em;
+}
+
+p {
+    color: $color-text;
+}

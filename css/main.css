@@ -1,3 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+h1 {
+  font-family: "ChangaOne", sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 4em;
+  color: white;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Alatsi", sans-serif;
+  color: #252525;
+}
+
+ul li a {
+  font-family: "ChangaOne", sans-serif;
+  color: white;
+  font-size: 1.5em;
+}
+
+p {
+  color: white;
+}
+
+.contact--button {
+  padding: 14px 31px;
+  border-radius: 12px 0 12px 0;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: white;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.button-color {
+  background-color: #414141;
+}
+
+main {
+  max-width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #414141;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */

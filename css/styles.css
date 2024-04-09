@@ -32,33 +32,41 @@
     background-color: rgb(255, 0, 0);
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
+    padding: 20px 20px 20px 20px;
 }
 
-.title__div--circle h1 {
-    font-family: ChangaOne, sans-serif;
+h1 {
+    font-family: "ChangaOne", sans-serif;
     font-style: italic;
     font-weight: lighter;
     font-size: 4em;
     color: #ffff;
-    width: 100%;
-    padding: 20px 40px 20px 20px;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+
+h2, h3, h4, h5, h6 {
+    font-family: Alatsi, sans-serif;
+    color: #252525;
+}
+
+ul li a {
+    font-family: ChangaOne, sans-serif;
+    color: #ffff;
+    font-size: 1.5em;
+}
+
+p {
+    color: #ffff;
+}
+
+.text--effects h1, h2, h3, h4, h5, h6, li, a {
     animation-name: text--animation;
     animation-iteration-count: 1;
     animation-duration: 2s;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span {
-    font-family: Alatsi, sans-serif;
-    color: #252525;
-    animation-name: text--animation;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
 }
 
 main {
@@ -75,8 +83,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: ChangaOne, sans-serif;
-    font-weight: lighter;
 }
 
 header nav img {
@@ -95,9 +101,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffff;
     text-decoration: none;
-    font-size: 1.5em;
     transition: all 1s ease-out;
 }
 
@@ -112,14 +116,6 @@ nav ul li:hover {
     border-top: white;
     border-radius: 1.5em;
     margin: 40px;
-}
-
-.div--title h2 {
-    font-family: Alatsi, sans-serif;
-    font-size: 3.5em;
-    animation-name: text--animation;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
 }
 
 /*CSS página index primera sección*/
