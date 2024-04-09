@@ -1,0 +1,19 @@
+{
+  "name": "proyecto_e-commerce",
+  "version": "1.0.0",
+  "description": "proyecto coderhouse f1 luxury",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TGhoul1997/PreEntrega2_Torres_Mosilot.git"
+  },
+  "author": "Jair Torres Mosilot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TGhoul1997/PreEntrega2_Torres_Mosilot/issues"
+  },
+  "homepage": "https://github.com/TGhoul1997/PreEntrega2_Torres_Mosilot#readme"
+}
