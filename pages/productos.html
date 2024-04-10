@@ -7,6 +7,7 @@
     <title>F1 Productos</title>
     <link rel="shortcut icon" href="./assets/images/favicon_f1.webp" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="text--effects">
@@ -33,9 +34,9 @@
         </nav>
     </header>
     <main class="products">
-        <span class="title__div--circle">
+        <div class="title__div--circle" data-aos="fade-right">
             <h1>Productos</h1>
-        </span>
+        </div>
         <div class="products--flex">
             <aside>
                 <ul>
@@ -152,6 +153,10 @@
             <img src="../assets/images/youtube.png" alt="ícono de youtube" class="footer__icon">
         </a>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
