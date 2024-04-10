@@ -36,7 +36,9 @@ ul li a {
 }
 
 p {
-  color: white;
+  font-family: "Alatsi", sans-serif;
+  color: #252525;
+  font-size: 1.5em;
 }
 
 @keyframes text--animation {
@@ -47,7 +49,7 @@ p {
     opacity: 100%;
   }
 }
-.text--effects h1, h2, h3, h4, h5, h6, li, a {
+.text--effects h1, h2, h3, h4, h5, h6, p, li, a {
   animation-name: text--animation;
   animation-iteration-count: 1;
   animation-duration: 2s;
@@ -61,6 +63,9 @@ p {
   font-weight: 400;
   color: white;
   box-shadow: 0px 15px 30px #252525;
+}
+.contact--button:hover {
+  cursor: pointer;
 }
 
 .button-color {
@@ -107,7 +112,7 @@ header nav ul li a {
   text-align: center;
   width: 25vw;
   height: 100px;
-  padding: 20px;
+  padding-top: 20px;
   border-bottom-right-radius: 2em;
   border-top-left-radius: 2em;
   background-color: #FF0000;
@@ -454,6 +459,109 @@ header nav ul li a {
   grid-area: product--12;
 }
 
+.central {
+  display: flex;
+  padding-top: 50px;
+}
+.central__article--flex {
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap;
+}
+.central__article--flex h2 {
+  font-size: 4em;
+}
+.central__article--flex div {
+  text-align: justify;
+}
+.central__div {
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+  width: 70%;
+}
+.central__div img {
+  border-radius: 2.5em;
+  width: 100%;
+  height: 80%;
+}
+
+.headquarters {
+  width: auto;
+  height: 700px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "local--1 local--2 local--3" "local--4 local--5 local--6";
+}
+.headquarters article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+.headquarters .local--1, .headquarters .local--2 {
+  border-right: #252525 solid;
+  border-bottom: #252525 solid;
+}
+.headquarters .local--4, .headquarters .local--5 {
+  border-right: #252525 solid;
+}
+.headquarters .local--6 {
+  border-top: #252525 solid;
+}
+
+.local--1 {
+  grid-area: local--1;
+}
+
+.local--2 {
+  grid-area: local--2;
+}
+
+.local--3 {
+  grid-area: local--3;
+}
+
+.local--4 {
+  grid-area: local--4;
+}
+
+.local--5 {
+  grid-area: local--5;
+}
+
+.local--6 {
+  grid-area: local--6;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+}
+.contact__box--primary {
+  display: flex;
+  flex-direction: column;
+}
+.contact__information {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+.contact__box--secundary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 50px;
+}
+.contact__box--secundary textarea {
+  width: 500px;
+  height: 300px;
+}
+
 .footer {
   display: flex;
   justify-content: end;
@@ -488,15 +596,14 @@ header nav ul li a {
   .title__div--circle {
     border-radius: 2em;
     padding: 0px;
-    width: 60%;
-    height: 40%;
+    width: 90%;
+    height: auto;
   }
   .title__div--circle h1 {
     font-size: 2em;
     width: 100%;
     text-align: center;
     margin: 0;
-    padding: 20px;
   }
   .box {
     flex-direction: column;
@@ -560,6 +667,48 @@ header nav ul li a {
     padding: 10px;
     justify-content: center;
     margin-top: 50px;
+  }
+  .central {
+    flex-direction: column;
+  }
+  .central__article--flex {
+    gap: 20px;
+  }
+  .central__article--flex h2 {
+    font-size: 3em;
+  }
+  .central__div {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .central__div img {
+    border-radius: 0px;
+    width: auto;
+    height: 150px;
+  }
+  .headquarters {
+    width: auto;
+    height: 2500px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "local--1" "local--2" "local--3" "local--4" "local--5" "local--6";
+    padding-top: 50px;
+  }
+  .headquarters .local--1, .headquarters .local--2, .headquarters .local--3, .headquarters .local--4, .headquarters .local--5, .headquarters .local--6 {
+    border: 0px;
+    border-top: #252525 solid;
+  }
+  .contact {
+    flex-direction: column;
+    width: 300px;
+    height: 1000px;
+    padding-top: 50px;
+  }
+  .contact__information {
+    width: auto;
+  }
+  .contact__box--secundary textarea {
+    width: 310px;
   }
 }
 

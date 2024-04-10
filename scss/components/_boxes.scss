@@ -4,14 +4,6 @@
     text-align: center;
     width: 25vw;
     height: 100px;
-    padding: map-get($padding, title);
+    padding-top: map-get($padding, title);
     @include create-box(primary);
 }
-
-.div--title {
-    text-align: center;
-    margin: 40px;
-    padding: map-get($padding, title-2);
-    @include create-box(secondary);
-}
-

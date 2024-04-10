@@ -1,0 +1,86 @@
+.central {
+    display: flex;
+    padding-top: 50px;
+    &__article--flex{
+        text-align: start;
+        display: flex;
+        flex-wrap: wrap;
+        h2 {
+            font-size: map-get($font-size, primary);
+        }
+        div {
+            text-align: justify;
+        }
+    }
+    &__div {
+        display: flex;
+        width: auto;
+        justify-content: flex-end;
+        width: 70%;
+        img {
+            
+            border-radius: map-get($border-radius, secondary);
+            width: 100%;
+            height: 80%;
+        }
+    }
+}
+.headquarters {
+    width: auto;
+    height: 700px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "local--1 local--2 local--3"
+        "local--4 local--5 local--6"
+    ;
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+    }
+    .local--1, .local--2 {
+        border-right: map-get($colors, tertiary) map-get($border-shape, primary);
+        border-bottom: map-get($colors, tertiary) map-get($border-shape, primary);
+    }
+    
+    .local--4, .local--5 {
+        border-right: map-get($colors, tertiary) map-get($border-shape, primary);
+    }
+    .local--6 {
+        border-top: map-get($colors, tertiary) map-get($border-shape, primary);
+    }
+}
+@for $i from 1 through length($grid-local) {
+        .local--#{$i}{
+            grid-area: nth($grid-local, $i);
+        }
+}
+.contact {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    &__box--primary{
+        display: flex;
+        flex-direction: column;
+    }
+    &__information {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 20px;
+    }
+    &__box--secundary {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+        textarea {
+            width: 500px;
+            height: 300px;
+        }
+    }
+}

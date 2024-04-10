@@ -22,7 +22,9 @@ ul li a {
 }
 
 p {
-    color: map-get($color-text,primary);
+    font-family: "Alatsi", sans-serif;
+    color: map-get($color-text, secondary);
+    font-size: map-get($font-size, quaternary);
 }
 @keyframes text--animation {
     0% {
@@ -32,7 +34,7 @@ p {
     100% {
         opacity: 100%;
     }
-}.text--effects h1, h2, h3, h4, h5, h6, li, a {
+}.text--effects h1, h2, h3, h4, h5, h6, p, li, a {
     animation-name: text--animation;
     animation-iteration-count: 1;
     animation-duration: 2s;

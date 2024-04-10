@@ -24,14 +24,14 @@
     .title__div--circle {
         border-radius: map-get($border-radius, primary);
         padding: 0px;
-        width: 60%;
-        height: 40%;
+        width: 90%;
+        height: auto;
         h1 {
             font-size: map-get($font-size, tertiary);
             width: 100%;
             text-align: center;
             margin: 0;
-            padding: map-get($padding, title);
+            padding: map-get($padding, nav-query);
         }
     }
 
@@ -153,5 +153,55 @@
         padding: map-get($padding, footer);
         justify-content: center;
         margin-top: 50px;
+    }
+    
+    .central {
+        flex-direction: column;
+        &__article--flex{
+            gap: 20px;
+            h2 {
+                font-size: map-get($font-size, title-query);  
+            }
+        }
+        &__div {
+            width: 100%;
+            padding-top: 50px;
+            img {
+                border-radius: 0px;
+                width: auto;
+                height:150px;
+            }
+        }    
+    }
+    .headquarters {
+        width: auto;
+        height: 2500px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+            "local--1" 
+            "local--2" 
+            "local--3"
+            "local--4" 
+            "local--5" 
+            "local--6"
+        ;
+        padding-top: 50px;
+        .local--1, .local--2, .local--3, .local--4, .local--5, .local--6 {
+            border: 0px;
+            border-top: map-get($colors, tertiary) map-get($border-shape, primary);
+        }
+    }
+    .contact {
+        flex-direction: column;
+        width: 300px;
+        height: 1000px;
+        padding-top: 50px;
+        &__information {
+            width: auto;
+        }
+        &__box--secundary textarea{
+            width: 310px;
+        }
     }
 }

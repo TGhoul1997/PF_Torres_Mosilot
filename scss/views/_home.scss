@@ -1,13 +1,3 @@
-.title__div--circle {
-    border-top-left-radius: 2em;
-    display: inline-block;
-    text-align: center;
-    width: 25vw;
-    height: 100px;
-    padding: map-get($padding, title);
-    @include create-box(primary);
-}
-
 .div--title {
     text-align: center;
     margin: 40px;
