@@ -4,5 +4,26 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        img {
+            height: 150px;
+            width: 200px;
+        }
+        ul {
+            display: flex;
+            gap: 1em;
+            padding-right: 1em;
+            li {
+                list-style: none;
+                &:hover {
+                    transform: scale(1.2);
+                }
+                a {
+                    text-decoration: none;
+                    transition: all 1s ease-out;
+                }
+                
+            }
+        }
     }
+    
 }

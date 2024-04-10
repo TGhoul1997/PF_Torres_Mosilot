@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 
@@ -254,7 +254,7 @@ nav ul li:hover {
 }
 
 .model__container h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #ffff;
 }
 
@@ -264,7 +264,7 @@ nav ul li:hover {
     justify-content: end;
     gap: 10px;
     padding: 30px;
-    background-color: #414141
+    background-color: #414141;
 }
 
 .footer__icon {

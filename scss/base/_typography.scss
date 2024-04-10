@@ -2,25 +2,25 @@ h1 {
     font-family: "ChangaOne", sans-serif;
     font-style: italic;
     font-weight: lighter;
-    font-size: 4em;
-    color: $color-text;
+    font-size: map-get($font-size,primary);
+    color: map-get($color-text,primary);
 }
 
 h2 {
-    font-size: 4em;
+    font-size: map-get($font-size,secondary);
 }
 
 h2, h3, h4, h5, h6 {
     font-family: "Alatsi", sans-serif;
-    color: $color-text-secondary;
+    color: map-get($color-text,secondary);
 }
 
 ul li a {
     font-family: "ChangaOne", sans-serif;
-    color: $color-text;
-    font-size: 1.5em;
+    color: map-get($color-text,primary);
+    font-size: map-get($font-size,nav);
 }
 
 p {
-    color: $color-text;
+    color: map-get($color-text,primary);
 }

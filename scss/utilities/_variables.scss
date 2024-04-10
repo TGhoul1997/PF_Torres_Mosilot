@@ -1,8 +1,21 @@
-$color-text: #ffff;
-$color-text-secondary: #252525;
-$color-primary: #414141;
-$color-secondary: #FF0000;
-$color-tertiary: #252525;
 $max-container-width: 90%;
 $container-padding: 20px;
 $container-margin: 0 auto;
+$color-text: (
+    primary: #ffff,
+    secondary: #252525,
+);
+$colors: (
+    primary: #414141,
+    secondary: #FF0000,
+    tertiary: #252525,
+    quaternary: #ffff,
+);
+$font-size: (
+    nav: 1.5em,
+    aside: 1.5em,
+    primary: 4em,
+    secondary: 3em,
+    tertiary: 2em,
+    btn: 1.5em,
+);
