@@ -39,6 +39,20 @@ p {
   color: white;
 }
 
+@keyframes text--animation {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.text--effects h1, h2, h3, h4, h5, h6, li, a {
+  animation-name: text--animation;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
 .contact--button {
   padding: 14px 31px;
   border-radius: 12px 0 12px 0;
@@ -99,23 +113,24 @@ header nav ul li a {
 }
 
 .title__div--circle {
+  border-top-left-radius: 2em;
   display: inline-block;
   text-align: center;
   width: 25vw;
   height: 100px;
-  background-color: #FF0000;
-  border-top-left-radius: 2em;
+  padding: 20px;
   border-bottom-right-radius: 2em;
-  padding: 20px 20px 20px 20px;
+  border-top-left-radius: 2em;
+  background-color: #FF0000;
 }
 
 .div--title {
   text-align: center;
+  margin: 40px;
   padding: 20px 0;
   border: 0.75em solid #FF0000;
   border-top: white;
   border-radius: 1.5em;
-  margin: 40px;
 }
 
 .box {
@@ -137,6 +152,106 @@ header nav ul li a {
   text-align: center;
   margin: 20px 0px 20px 0px;
   color: white;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1000px;
+  gap: 20px;
+  padding-top: 60px;
+}
+.brand__article {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.brand__article img {
+  height: 400px;
+  width: 100%;
+  border-radius: 1em;
+}
+
+.model__container {
+  width: 100%;
+  max-width: 90%;
+  max-height: 1500px;
+  margin: 60px auto;
+  padding-top: 60px;
+  padding-bottom: 700px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 40% 10% 40% 10%;
+  grid-template-rows: 10% 40% 10% 40% 10% 40%;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-areas: "car--1 model--1 model--2 model--2" "car--1 model--1 car--2 car--2" "model--3 model--3 car--4 model--4" "car--3 car--3 car--4 model--4" "car--5 model--5 model--6 model--6" "car--5 model--5 car--6 car--6";
+}
+.model__container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+}
+.model__container div {
+  background-color: #414141;
+  border-radius: 2em;
+  border: outset #414141 0.5em;
+  align-content: center;
+  text-align: center;
+}
+.model__container h3 {
+  font-size: 2em;
+  color: white;
+}
+
+.car--1 {
+  grid-area: car--1;
+}
+
+.car--2 {
+  grid-area: car--2;
+}
+
+.car--3 {
+  grid-area: car--3;
+}
+
+.car--4 {
+  grid-area: car--4;
+}
+
+.car--5 {
+  grid-area: car--5;
+}
+
+.car--6 {
+  grid-area: car--6;
+}
+
+.model--1 {
+  grid-area: model--1;
+}
+
+.model--2 {
+  grid-area: model--2;
+}
+
+.model--3 {
+  grid-area: model--3;
+}
+
+.model--4 {
+  grid-area: model--4;
+}
+
+.model--5 {
+  grid-area: model--5;
+}
+
+.model--6 {
+  grid-area: model--6;
 }
 
 /*# sourceMappingURL=main.css.map */

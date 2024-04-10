@@ -32,7 +32,16 @@
     background-color: rgb(255, 0, 0);
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
+}
+
+.div--title {
+    text-align: center;
+    padding: 20px 0;
+    border: 0.75em solid #FF0000;
+    border-top: white;
+    border-radius: 1.5em;
+    margin: 40px;
 }
 
 h1 {
@@ -109,14 +118,7 @@ nav ul li:hover {
     transform: scale(1.2);
 }
 
-.div--title {
-    text-align: center;
-    padding: 20px 0;
-    border: 0.75em solid #FF0000;
-    border-top: white;
-    border-radius: 1.5em;
-    margin: 40px;
-}
+
 
 /*CSS página index primera sección*/
 .box {

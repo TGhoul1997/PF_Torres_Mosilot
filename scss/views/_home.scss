@@ -1,3 +1,19 @@
+.title__div--circle {
+    border-top-left-radius: 2em;
+    display: inline-block;
+    text-align: center;
+    width: 25vw;
+    height: 100px;
+    padding: map-get($padding, title);
+    @include create-box(primary);
+}
+
+.div--title {
+    text-align: center;
+    margin: 40px;
+    padding: map-get($padding, title-2);
+    @include create-box(secondary);
+}
 .box {
     display: flex;
     margin: 20px;
@@ -16,5 +32,73 @@
             margin: 20px 0px 20px 0px;
             color: map-get($color-text,primary);
         }
+    }
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1000px;
+    gap: 20px;
+    padding-top: 60px;
+    &__article {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        img {
+            height: 400px;
+            width: 100%;
+            border-radius: 1em;
+        }
+    }
+}
+.model__container {
+    width: 100%;
+    max-width: 90%;
+    max-height: 1500px;
+    margin: 60px auto;
+    padding-top: 60px;
+    padding-bottom: 700px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 10% 40% 10%;
+    grid-template-rows: 10% 40% 10% 40% 10% 40%;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas:
+        "car--1 model--1 model--2 model--2"
+        "car--1 model--1 car--2 car--2"
+        "model--3 model--3 car--4 model--4"
+        "car--3 car--3 car--4 model--4"
+        "car--5 model--5 model--6 model--6"
+        "car--5 model--5 car--6 car--6"
+    ;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2em;
+    }
+    div {
+        background-color: #414141;
+        border-radius: 2em;
+        border: outset #414141 0.5em;
+        align-content: center;
+        text-align: center;
+    }
+    h3 {
+        font-size: 2em;
+        color: #ffff;
+    }
+}
+@for $i from 1 through length($grid-car) {
+    .car--#{$i}{
+        grid-area: nth($grid-car, $i);
+    }
+}
+@for $i from 1 through length($grid-car) {
+    .model--#{$i}{
+        grid-area: nth($grid-model, $i);
     }
 }

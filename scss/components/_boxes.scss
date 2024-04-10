@@ -1,19 +1,17 @@
 .title__div--circle {
+    border-top-left-radius: 2em;
     display: inline-block;
     text-align: center;
     width: 25vw;
     height: 100px;
-    background-color: map-get($colors,secondary);
-    border-top-left-radius: 2em;
-    border-bottom-right-radius: 2em;
-    padding: 20px 20px 20px 20px;
+    padding: map-get($padding, title);
+    @include create-box(primary);
 }
 
 .div--title {
     text-align: center;
-    padding: 20px 0;
-    border: 0.75em solid map-get($colors, secondary);
-    border-top: map-get($colors, quaternary);
-    border-radius: 1.5em;
     margin: 40px;
+    padding: map-get($padding, title-2);
+    @include create-box(secondary);
 }
+
