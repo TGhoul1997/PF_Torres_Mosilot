@@ -7,21 +7,20 @@
     border: map-get($border-radius, quaternary) map-get($border-shape, primary) map-get($colors,secondary);
     border-top: map-get($colors, quaternary);
     border-radius: map-get($border-radius, tertiary);
-    } @else if $border-type == tertiary {
+    } @else if $box-type == tertiary {
     background-color: map-get($colors, primary);
     border-radius: map-get($border-radius, primary);
     border: map-get($border-shape, secondary) map-get($colors, primary) map-get($border-radius, quinary);
-    }@else if $box-type == tertiary {
+    }@else if $box-type == quaternary {
     border: map-get($border-radius, quaternary) map-get($border-shape, primary) map-get($colors, secondary);
     border-top: map-get($colors, quaternary);
     border-left: map-get($colors, quaternary);
     border-radius: map-get($border-radius, tertiary);
-
-    }@else if $box-type == quaternary {
+    }@else if $box-type == quinary {
     border: map-get($border-shape, primary) map-get($colors, secondary) map-get($border-radius , quaternary);
     border-top: map-get($colors, quaternary);
     border-left: map-get($colors, quaternary);
-    border-radius: ap-get($border-radius , secondary);
+    border-radius: map-get($border-radius, secondary);
     } @else {
         border: 0;
     }

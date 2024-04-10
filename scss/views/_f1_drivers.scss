@@ -1,0 +1,35 @@
+.pilots__section--grid {
+    width: 100%;
+    max-width: 1700px;
+    max-height: 1300px;
+    margin: 60px auto;
+    padding-top: 60px;
+    padding-bottom: 700px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-template-areas:
+        "pilot--1 pilot--2 pilot--3 pilot--4 pilot--5"
+        "pilot--6 pilot--7 pilot--8 pilot--9 pilot--10"
+        "pilot--11 pilot--12 pilot--13 pilot--14 pilot--15"
+        "pilot--16 pilot--17 pilot--18 pilot--19 pilot--20"
+    ;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include create-box(quinary);
+        h3 {
+            color: map-get($color-text, secondary);
+        }
+        
+    }
+}
+@for $i from 1 through length($grid-pilot) {
+    .pilot--#{$i}{
+        grid-area: nth($grid-pilot, $i);
+    }
+}
