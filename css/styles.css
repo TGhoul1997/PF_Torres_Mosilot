@@ -570,7 +570,6 @@ nav ul li:hover {
     .box {
         flex-direction: column;
         width: 60vw;
-
         gap: 20px;
     }
 

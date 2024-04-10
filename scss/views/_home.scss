@@ -14,6 +14,7 @@
     padding: map-get($padding, title-2);
     @include create-box(secondary);
 }
+
 .box {
     display: flex;
     margin: 20px;
