@@ -459,6 +459,41 @@ header nav ul li a {
   grid-area: product--12;
 }
 
+.news--principal {
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "ad-1 ad-1 ad-1 ad-2 ad-3" "ad-1 ad-1 ad-1 ad-4 ad-5" "ad-1 ad-1 ad-1 ad-6 ad-7";
+}
+.news--principal img {
+  width: auto;
+}
+
+.ad--1 {
+  grid-area: ad-1;
+}
+
+.ad--2 {
+  grid-area: ad-2;
+}
+
+.ad--3 {
+  grid-area: ad-3;
+}
+
+.ad--4 {
+  grid-area: ad-4;
+}
+
+.ad--5 {
+  grid-area: ad--5;
+}
+
+.ad--6 {
+  grid-area: ad-6 ad-7;
+}
+
 .central {
   display: flex;
   padding-top: 50px;
