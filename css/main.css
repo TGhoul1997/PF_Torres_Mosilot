@@ -78,30 +78,30 @@ main {
   margin: 0 auto;
 }
 
-header {
+.header {
   background-color: #414141;
 }
-header nav {
+.header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav img {
+.header nav img {
   height: 150px;
   width: 200px;
 }
-header nav ul {
+.header nav ul {
   display: flex;
   gap: 1em;
   padding-right: 1em;
 }
-header nav ul li {
+.header nav ul li {
   list-style: none;
 }
-header nav ul li:hover {
+.header nav ul li:hover {
   transform: scale(1.2);
 }
-header nav ul li a {
+.header nav ul li a {
   text-decoration: none;
   transition: all 1s ease-out;
 }
@@ -464,30 +464,29 @@ header nav ul li a {
 }
 
 .news--principal {
-  max-width: 90vw;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "ad-1 ad-1 ad-1 ad-2 ad-3" "ad-1 ad-1 ad-1 ad-4 ad-5" "ad-1 ad-1 ad-1 ad-6 ad-7";
+  grid-template-areas: "ad--1 ad--1 ad--1 ad--2 ad--3" "ad--1 ad--1 ad--1 ad--4 ad--5" "ad--1 ad--1 ad--1 ad--6 ad--7";
 }
 .news--principal img {
   width: auto;
 }
 
 .ad--1 {
-  grid-area: ad-1;
+  grid-area: ad--1;
 }
 
 .ad--2 {
-  grid-area: ad-2;
+  grid-area: ad--2;
 }
 
 .ad--3 {
-  grid-area: ad-3;
+  grid-area: ad--3;
 }
 
 .ad--4 {
-  grid-area: ad-4;
+  grid-area: ad--4;
 }
 
 .ad--5 {
@@ -495,7 +494,11 @@ header nav ul li a {
 }
 
 .ad--6 {
-  grid-area: ad-6 ad-7;
+  grid-area: ad--6;
+}
+
+.ad--7 {
+  grid-area: ad--7;
 }
 
 .central {
@@ -503,20 +506,21 @@ header nav ul li a {
   padding-top: 50px;
 }
 .central__article--flex {
-  text-align: start;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 80px;
 }
 .central__article--flex h2 {
   font-size: 4em;
 }
 .central__article--flex div {
-  text-align: justify;
+  text-align: left;
 }
 .central__div {
   display: flex;
   width: auto;
   justify-content: flex-end;
+  align-items: center;
   width: 70%;
 }
 .central__div img {
@@ -544,11 +548,11 @@ header nav ul li a {
   border-right: #252525 solid;
   border-bottom: #252525 solid;
 }
+.headquarters .local--3 {
+  border-bottom: #252525 solid;
+}
 .headquarters .local--4, .headquarters .local--5 {
   border-right: #252525 solid;
-}
-.headquarters .local--6 {
-  border-top: #252525 solid;
 }
 
 .local--1 {
@@ -736,6 +740,9 @@ header nav ul li a {
   .headquarters .local--1, .headquarters .local--2, .headquarters .local--3, .headquarters .local--4, .headquarters .local--5, .headquarters .local--6 {
     border: 0px;
     border-top: #252525 solid;
+  }
+  .headquarters p {
+    font-size: 0.8em;
   }
   .contact {
     flex-direction: column;

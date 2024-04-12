@@ -191,6 +191,9 @@
             border: 0px;
             border-top: map-get($colors, tertiary) map-get($border-shape, primary);
         }
+        p {
+            font-size: map-get($font-size, text-query)
+        }
     }
     .contact {
         flex-direction: column;
