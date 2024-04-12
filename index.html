@@ -10,11 +10,12 @@
     <link rel="shortcut icon" href="./assets/images/favicon_f1.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body class="text--effects">
     <header>
-        <nav>
+        <!-- <nav>
             <a href="index.html"><img src="./assets/images/home_icon.webp" alt="icon de Luxury F1"></a>
             <ul>
                 <li>
@@ -33,6 +34,35 @@
                     <a href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" hhref="index.html"><img src="./assets/images/home_icon.webp"
+                        alt="icon de Luxury F1"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/f1_drivers.html">F1 Drivers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -43,12 +73,12 @@
             <article class="box__article">
                 <a href="./pages/f1_drivers.html"><img src="./assets/images/verstappen.webp"
                         alt="imagen de piloto de red bull"><a>
-                <h3>Max Verstappen</h3>
+                        <h3>Max Verstappen</h3>
             </article>
             <article class="box__article">
                 <a href="./pages/f1_drivers.html"><img src="./assets/images/hamilton.webp"
                         alt="imagen de piloto de mercedez"><a>
-                <h3>Lewis Hamilton</h3>
+                        <h3>Lewis Hamilton</h3>
             </article>
             <article class="box__article">
                 <a href="./pages/f1_drivers.html"><img src="./assets/images/leclerc.webp"
@@ -76,26 +106,28 @@
         </div>
         <section class="brand">
             <article class="brand__article">
-                <a href="https://www.mercedes-benz.com.pe/" target="_blank"><img src="./assets/images/mercedes-benz-logo.webp"
-                        alt="logo Mercedez Benz"></a>
+                <a href="https://www.mercedes-benz.com.pe/" target="_blank"><img
+                        src="./assets/images/mercedes-benz-logo.webp" alt="logo Mercedez Benz"></a>
             </article>
             <article class="brand__article">
                 <a href="https://cars.mclaren.com/es-es" target="_blank"><img src="./assets/images/mclaren-logo.webp"
                         alt="logo McLaren"></a>
             </article>
             <article class="brand__article">
-                <a href="https://www.renault.pe/" target="_blank"><img src="./assets/images/renault-logo.webp" alt="logo Renault"></a>
+                <a href="https://www.renault.pe/" target="_blank"><img src="./assets/images/renault-logo.webp"
+                        alt="logo Renault"></a>
             </article>
             <article class="brand__article">
                 <a href="https://www.ferrari.com/es-ES" target="_blank"><img src="./assets/images/ferrari-logo.webp"
                         alt="logo Ferrari"></a>
             </article>
             <article class="brand__article">
-                <a href="https://www.astonmartin.com/en/" target="_blank"><img src="./assets/images/aston-martin-logo.webp"
-                        alt="logo Aston Martin"></a>
+                <a href="https://www.astonmartin.com/en/" target="_blank"><img
+                        src="./assets/images/aston-martin-logo.webp" alt="logo Aston Martin"></a>
             </article>
             <article class="brand__article">
-                <a href="https://honda.com.pe/" target="_blank"><img src="./assets/images/honda-logo.webp" alt="auto Honda"></a>
+                <a href="https://honda.com.pe/" target="_blank"><img src="./assets/images/honda-logo.webp"
+                        alt="auto Honda"></a>
             </article>
         </section>
         <div class="div--title">
@@ -155,5 +187,9 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

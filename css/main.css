@@ -459,6 +459,10 @@ header nav ul li a {
   grid-area: product--12;
 }
 
+.news .title__div--circle {
+  margin-bottom: 50px;
+}
+
 .news--principal {
   max-width: 90vw;
   display: grid;
