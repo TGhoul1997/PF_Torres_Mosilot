@@ -1,30 +1,32 @@
-h1 {
-    font-family: "ChangaOne", sans-serif;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: map-get($font-size,primary);
-    color: map-get($color-text,primary);
-}
-
-h2 {
-    font-size: map-get($font-size,secondary);
-}
-
-h2, h3, h4, h5, h6 {
-    font-family: "Alatsi", sans-serif;
-    color: map-get($color-text,secondary);
-}
-
-ul li a {
-    font-family: "ChangaOne", sans-serif;
-    color: map-get($color-text,primary);
-    font-size: map-get($font-size,nav);
-}
-
-p {
-    font-family: "Alatsi", sans-serif;
-    color: map-get($color-text, secondary);
-    font-size: map-get($font-size, quaternary);
+.typography {
+    h1 {
+        font-family: "ChangaOne", sans-serif;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: map-get($font-size,primary);
+        color: map-get($color-text,primary);
+    }
+    
+    h2 {
+        font-size: map-get($font-size,secondary);
+    }
+    
+    h2, h3, h4, h5, h6 {
+        font-family: "Alatsi", sans-serif;
+        color: map-get($color-text,secondary);
+    }
+    
+    ul li a {
+        font-family: "ChangaOne", sans-serif;
+        color: map-get($color-text,primary);
+        font-size: map-get($font-size,nav);
+    }
+    
+    p {
+        font-family: "Alatsi", sans-serif;
+        color: map-get($color-text, secondary);
+        font-size: map-get($font-size, quaternary);
+    }
 }
 @keyframes text--animation {
     0% {

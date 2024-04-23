@@ -1,8 +1,8 @@
-.header {
+.proheader header{
     background-color: #414141;
-    nav {
+}
+.pronav nav {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         img {
             height: 150px;
@@ -24,6 +24,8 @@
                 
             }
         }
-    }
-    
+}
+.pronav__div div{
+    display: flex;
+    justify-content: space-between;
 }

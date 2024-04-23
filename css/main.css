@@ -12,30 +12,26 @@
   font-family: Alatsi;
   src: url(../assets/fonts/Alatsi-Regular.ttf);
 }
-h1 {
+.typography h1 {
   font-family: "ChangaOne", sans-serif;
   font-style: italic;
   font-weight: lighter;
   font-size: 4em;
   color: white;
 }
-
-h2 {
+.typography h2 {
   font-size: 3em;
 }
-
-h2, h3, h4, h5, h6 {
+.typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
   font-family: "Alatsi", sans-serif;
   color: #252525;
 }
-
-ul li a {
+.typography ul li a {
   font-family: "ChangaOne", sans-serif;
   color: white;
   font-size: 1.5em;
 }
-
-p {
+.typography p {
   font-family: "Alatsi", sans-serif;
   color: #252525;
   font-size: 1.5em;
@@ -78,32 +74,37 @@ main {
   margin: 0 auto;
 }
 
-.header {
+.proheader header {
   background-color: #414141;
 }
-.header nav {
+
+.pronav nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.header nav img {
+.pronav nav img {
   height: 150px;
   width: 200px;
 }
-.header nav ul {
+.pronav nav ul {
   display: flex;
   gap: 1em;
   padding-right: 1em;
 }
-.header nav ul li {
+.pronav nav ul li {
   list-style: none;
 }
-.header nav ul li:hover {
+.pronav nav ul li:hover {
   transform: scale(1.2);
 }
-.header nav ul li a {
+.pronav nav ul li a {
   text-decoration: none;
   transition: all 1s ease-out;
+}
+
+.pronav__div div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title__div--circle {
