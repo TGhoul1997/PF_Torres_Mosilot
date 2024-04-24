@@ -2,6 +2,7 @@
     .title__div--circle {
         margin-bottom: 50px;
     }
+
     div {
         gap: 10px;
         img {
@@ -25,7 +26,10 @@
     img {
         width: 380px;
         height: 220px;
-    };
+    }
+    h3 {
+        font-size: map-get($font-size ,  quaternary);
+    }
 }
 @for $i from 1 through length($grid-ad) {
     .ad--#{$i}{

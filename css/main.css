@@ -483,6 +483,9 @@ main {
   width: 380px;
   height: 220px;
 }
+.news--principal h3 {
+  font-size: 1.5em;
+}
 
 .ad--1 {
   grid-area: ad--1;
