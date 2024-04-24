@@ -2,18 +2,29 @@
     .title__div--circle {
         margin-bottom: 50px;
     }
+    div {
+        gap: 10px;
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
+
 .news--principal {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    max-height: 1000px;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(3, 300px);
     grid-template-areas: 
-        "ad--1 ad--1 ad--1 ad--2 ad--3"
-        "ad--1 ad--1 ad--1 ad--4 ad--5"
-        "ad--1 ad--1 ad--1 ad--6 ad--7"
+        "ad--1 ad--1 ad--2 ad--3"
+        "ad--1 ad--1 ad--4 ad--5"
+        "ad--1 ad--1 ad--6 ad--7"
     ;
     img {
-        width: auto;
+        width: 380px;
+        height: 220px;
     };
 }
 @for $i from 1 through length($grid-ad) {

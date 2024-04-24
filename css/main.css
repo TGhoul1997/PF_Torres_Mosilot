@@ -104,7 +104,7 @@ main {
 
 .pronav__div div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .title__div--circle {
@@ -249,6 +249,109 @@ main {
   grid-area: model--6;
 }
 
+.products--flex {
+  display: flex;
+  gap: 200px;
+}
+
+.products img {
+  border-radius: 2em;
+  padding: 20px;
+}
+
+.products aside {
+  background-color: darkgray;
+  margin-left: 20px;
+  margin-top: 50px;
+  width: 300px;
+  height: 1200px;
+}
+.products aside ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products aside li {
+  list-style: none;
+  margin: 20px;
+  font-family: alatsi;
+  font-size: 1.5em;
+}
+
+.products__section--grid {
+  width: 65vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "product--1 product--2 product--3" "product--4 product--5 product--6" "product--7 product--8 product--9" "product--10 product--11 product--12";
+}
+.products__section--grid img {
+  max-width: 100%;
+}
+.products__section--grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  max-width: 350px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 0.75em solid #FF0000;
+  border-top: white;
+  border-left: white;
+  border-radius: 1.5em;
+  margin: 40px;
+}
+
+.product--1 {
+  grid-area: product--1;
+}
+
+.product--2 {
+  grid-area: product--2;
+}
+
+.product--3 {
+  grid-area: product--3;
+}
+
+.product--4 {
+  grid-area: product--4;
+}
+
+.product--5 {
+  grid-area: product--5;
+}
+
+.product--6 {
+  grid-area: product--6;
+}
+
+.product--7 {
+  grid-area: product--7;
+}
+
+.product--8 {
+  grid-area: product--8;
+}
+
+.product--9 {
+  grid-area: product--9;
+}
+
+.product--10 {
+  grid-area: product--10;
+}
+
+.product--11 {
+  grid-area: product--11;
+}
+
+.product--12 {
+  grid-area: product--12;
+}
+
 .pilots__section--grid {
   width: 100%;
   max-width: 1700px;
@@ -357,121 +460,28 @@ main {
   grid-area: pilot--20;
 }
 
-.products--flex {
-  display: flex;
-  gap: 200px;
-}
-
-.products img {
-  border-radius: 2em;
-  padding: 20px;
-}
-
-.products aside {
-  background-color: darkgray;
-  margin-left: 20px;
-  margin-top: 50px;
-  width: 300px;
-  height: 1200px;
-}
-.products aside ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.products aside li {
-  list-style: none;
-  margin: 20px;
-  font-family: alatsi;
-  font-size: 1.5em;
-}
-
-.products__section--grid {
-  width: 65vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "product--1 product--2 product--3" "product--4 product--5 product--6" "product--7 product--8 product--9" "product--10 product--11 product--12";
-}
-.products__section--grid img {
-  max-width: 100%;
-}
-.products__section--grid div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  text-align: center;
-  max-width: 350px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 0.75em solid #FF0000;
-  border-top: white;
-  border-left: white;
-  border-radius: 1.5em;
-  margin: 40px;
-}
-
-.product--1 {
-  grid-area: product--1;
-}
-
-.product--2 {
-  grid-area: product--2;
-}
-
-.product--3 {
-  grid-area: product--3;
-}
-
-.product--4 {
-  grid-area: product--4;
-}
-
-.product--5 {
-  grid-area: product--5;
-}
-
-.product--6 {
-  grid-area: product--6;
-}
-
-.product--7 {
-  grid-area: product--7;
-}
-
-.product--8 {
-  grid-area: product--8;
-}
-
-.product--9 {
-  grid-area: product--9;
-}
-
-.product--10 {
-  grid-area: product--10;
-}
-
-.product--11 {
-  grid-area: product--11;
-}
-
-.product--12 {
-  grid-area: product--12;
-}
-
 .news .title__div--circle {
   margin-bottom: 50px;
+}
+.news div {
+  gap: 10px;
+}
+.news div img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .news--principal {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "ad--1 ad--1 ad--1 ad--2 ad--3" "ad--1 ad--1 ad--1 ad--4 ad--5" "ad--1 ad--1 ad--1 ad--6 ad--7";
+  max-height: 1000px;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas: "ad--1 ad--1 ad--2 ad--3" "ad--1 ad--1 ad--4 ad--5" "ad--1 ad--1 ad--6 ad--7";
 }
 .news--principal img {
-  width: auto;
+  width: 380px;
+  height: 220px;
 }
 
 .ad--1 {
@@ -629,13 +639,17 @@ main {
     padding: 0%;
   }
   header nav ul li {
-    font-size: 0.4em;
+    font-size: 0.6em;
     justify-content: space-between;
   }
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .pronav__div div {
+    display: flex;
+    justify-content: flex-start;
   }
   .title__div--circle {
     border-radius: 2em;
@@ -707,11 +721,6 @@ main {
     grid-template-rows: repeat(20, 1fr);
     grid-template-areas: "pilot--1" "pilot--2" "pilot--3" "pilot--4" "pilot--5" "pilot--6" "pilot--7" "pilot--8" "pilot--9" "pilot--10" "pilot--11" "pilot--12" "pilot--13" "pilot--14" "pilot--15" "pilot--16" "pilot--17" "pilot--18" "pilot--19" "pilot--20";
   }
-  .footer {
-    padding: 10px;
-    justify-content: center;
-    margin-top: 50px;
-  }
   .central {
     flex-direction: column;
   }
@@ -720,6 +729,9 @@ main {
   }
   .central__article--flex h2 {
     font-size: 3em;
+  }
+  .central__article--flex p {
+    font-size: 1em;
   }
   .central__div {
     width: 100%;
@@ -732,7 +744,7 @@ main {
   }
   .headquarters {
     width: auto;
-    height: 2500px;
+    height: auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "local--1" "local--2" "local--3" "local--4" "local--5" "local--6";
@@ -749,13 +761,17 @@ main {
     flex-direction: column;
     width: 300px;
     height: 1000px;
-    padding-top: 50px;
   }
   .contact__information {
     width: auto;
   }
   .contact__box--secundary textarea {
     width: 310px;
+  }
+  .footer {
+    padding: 10px;
+    justify-content: center;
+    margin-top: 50px;
   }
 }
 
