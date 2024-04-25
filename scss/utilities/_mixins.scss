@@ -21,6 +21,12 @@
     border-top: map-get($colors, quaternary);
     border-left: map-get($colors, quaternary);
     border-radius: map-get($border-radius, secondary);
+    }@else if $box-type == sexinary {
+    border-radius: map-get($border-radius, sexinary);
+    border-right: map-get($border-shape, tertiary) map-get($border-radius, sexinary) map-get($colors, primary);
+    border-left: map-get($border-shape, tertiary) map-get($border-radius, sexinary) map-get($colors, primary);
+    border-top: map-get($border-shape, tertiary) map-get($border-radius, sexinary) map-get($colors, secondary);
+    border-bottom: map-get($border-shape, tertiary) map-get($border-radius, sexinary) map-get($colors, secondary);
     } @else {
         border: 0;
     }
