@@ -734,6 +734,37 @@ main {
     grid-template-rows: repeat(20, 1fr);
     grid-template-areas: "pilot--1" "pilot--2" "pilot--3" "pilot--4" "pilot--5" "pilot--6" "pilot--7" "pilot--8" "pilot--9" "pilot--10" "pilot--11" "pilot--12" "pilot--13" "pilot--14" "pilot--15" "pilot--16" "pilot--17" "pilot--18" "pilot--19" "pilot--20";
   }
+  .news--principal {
+    display: grid;
+    max-height: 1800px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(8, 200px);
+    grid-template-areas: "ad--1" "ad--1" "ad--2" "ad--3" "ad--4" "ad--5" "ad--6" "ad--7";
+  }
+  .news--principal img {
+    width: 180px;
+    height: 150px;
+  }
+  .news--principal h2 {
+    font-size: 1.9em;
+  }
+  .news--principal h3 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .news--principal article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .ad--1 div img {
+    width: 240px;
+    height: 240px;
+  }
   .central {
     flex-direction: column;
   }
