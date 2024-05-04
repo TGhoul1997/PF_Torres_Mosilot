@@ -606,7 +606,7 @@ main {
 .contact {
   display: flex;
   justify-content: space-around;
-  height: 400px;
+  height: 450px;
 }
 .contact__box--primary {
   display: flex;
