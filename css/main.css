@@ -134,7 +134,7 @@ main {
 }
 .box__article {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   width: 100%;
   height: 300px;
@@ -157,12 +157,12 @@ main {
   gap: 20px;
   padding-top: 60px;
 }
-.brand__article {
+.brand__div {
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-.brand__article img {
+.brand__div img {
   height: 400px;
   width: 100%;
   border-radius: 1em;
@@ -186,6 +186,7 @@ main {
 .model__container img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 2em;
 }
 .model__container div {
@@ -285,13 +286,14 @@ main {
   grid-template-areas: "product--1 product--2 product--3" "product--4 product--5 product--6" "product--7 product--8 product--9" "product--10 product--11 product--12";
 }
 .products__section--grid img {
-  max-width: 100%;
+  width: 100%;
+  height: 22vh;
 }
 .products__section--grid div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   text-align: center;
   max-width: 350px;
   padding-top: 20px;
@@ -475,9 +477,11 @@ main {
   border-top: groove 1.8em #FF0000;
   border-bottom: groove 1.8em #FF0000;
 }
-.news--principal img {
-  width: 380px;
-  height: 220px;
+.news--principal article {
+  width: 90%;
+}
+.news--principal article img {
+  width: 100%;
 }
 .news--principal h3 {
   font-size: 1.5em;
@@ -485,30 +489,58 @@ main {
 
 .ad--1 {
   grid-area: ad--1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ad--2 {
   grid-area: ad--2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ad--3 {
   grid-area: ad--3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ad--4 {
   grid-area: ad--4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ad--5 {
   grid-area: ad--5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ad--6 {
   grid-area: ad--6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ad--7 {
   grid-area: ad--7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ad--1 {
@@ -523,6 +555,7 @@ main {
 .ad--1 div img {
   width: 760px;
   height: 740px;
+  object-fit: cover;
 }
 
 .central {
@@ -695,17 +728,23 @@ main {
     align-items: center;
     height: auto;
   }
-  .brand__article img {
-    width: 250px;
-    height: 200px;
+  .brand__div a img {
+    height: 35vh;
   }
   .model__container {
-    max-height: 1600px;
-    max-width: 200px;
+    max-height: 1400px;
+    max-width: 250px;
     padding-top: 0px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     grid-template-areas: "car--1" "model--1" "car--2" "model--2" "car--3" "model--3" "car--4" "model--4" "car--5" "model--5" "car--6" "model--6";
+  }
+  .model__container img {
+    width: 100%;
+    height: 20vh;
+  }
+  .model__container h3 {
+    font-size: 1.5em;
   }
   .products aside {
     margin: 50px 0 0 0;
@@ -725,6 +764,11 @@ main {
     width: 300px;
     padding: 0%;
     margin: 20px 0;
+  }
+  .products__section--grid div img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
   }
   .pilots__section--grid {
     max-height: 6500px;
@@ -754,6 +798,7 @@ main {
   .news--principal h3 {
     font-size: 0.8em;
     text-align: center;
+    object-fit: cover;
   }
   .news--principal article {
     display: flex;
